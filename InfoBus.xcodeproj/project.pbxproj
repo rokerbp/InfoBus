@@ -12,6 +12,7 @@
 		EBD2AA1A208173620013E932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD2AA18208173620013E932 /* Main.storyboard */; };
 		EBD2AA1C208173620013E932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD2AA1B208173620013E932 /* Assets.xcassets */; };
 		EBD2AA1F208173620013E932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD2AA1D208173620013E932 /* LaunchScreen.storyboard */; };
+		EBD2AA27208174BA0013E932 /* popayan_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD2AA26208174BA0013E932 /* popayan_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EBD2AA1B208173620013E932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBD2AA1E208173620013E932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBD2AA20208173620013E932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD2AA26208174BA0013E932 /* popayan_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popayan_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		EBD2AA13208173620013E932 /* InfoBus */ = {
 			isa = PBXGroup;
 			children = (
+				EBD2AA26208174BA0013E932 /* popayan_logo.png */,
 				EBD2AA14208173620013E932 /* AppDelegate.swift */,
 				EBD2AA16208173620013E932 /* ViewController.swift */,
 				EBD2AA18208173620013E932 /* Main.storyboard */,
@@ -126,6 +129,7 @@
 				EBD2AA1F208173620013E932 /* LaunchScreen.storyboard in Resources */,
 				EBD2AA1C208173620013E932 /* Assets.xcassets in Resources */,
 				EBD2AA1A208173620013E932 /* Main.storyboard in Resources */,
+				EBD2AA27208174BA0013E932 /* popayan_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
