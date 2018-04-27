@@ -68,31 +68,13 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="S6R-Ps-R01"/>
                                 </connections>
                             </textField>
-                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Oi-iu-PcY">
-                                <rect key="frame" x="45" y="406" width="230" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="tiT-Gf-7il"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Daa-lZ-XpR"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="keE-ww-Leg">
-                                <rect key="frame" x="45" y="406" width="230" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="oWM-yr-dn9"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="q4r-Pj-pg6"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="destinoField" destination="3Bd-W9-0Hr" id="RA6-wS-84w"/>
-                        <outlet property="destinoSelector" destination="keE-ww-Leg" id="qA5-4G-zzt"/>
                         <outlet property="origenField" destination="odZ-BS-ZKV" id="GV7-Wh-k3s"/>
-                        <outlet property="origenSelector" destination="4Oi-iu-PcY" id="gXo-9G-h36"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -10,79 +10,73 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
-    @IBOutlet weak var origenField: UITextField!
+    
     let origenes = ["Campanario", "Terraplaza", "Parque de la salud", "La estancia", "El Uvo", "Lomas de granada"]
     let destinos = ["CC Campanario", "Terraplaza", "Parque de la salud", "La estancia", "El Uvo", "Lomas de granada"]
     
+    @IBOutlet weak var origenField: UITextField!
+    
     @IBOutlet weak var destinoField: UITextField!
-    
-    @IBOutlet weak var origenSelector: UIPickerView!
-    
-    @IBOutlet weak var destinoSelector: UIPickerView!
-    
-    //funciones
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        var countrows : Int = origenes.count
-            if pickerView == destinoSelector {
-                countrows = self.destinos.count
-            }
-            return countrows
-        }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView == origenSelector {
-            let titleRow = origenes[row]
-                return titleRow
-        }
-        else if pickerView == destinoSelector {
-            let titleRow = destinos[row]
-                return titleRow
-        }
-        return ""
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView == origenSelector {
-            self.origenField.text = self.origenes[row]
-            self.origenSelector.isHidden = true
-        }
-        
-        else if pickerView == destinoSelector {
-            self.destinoField.text = self.destinos[row]
-            self.destinoSelector.isHidden = true
-        }
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        if (textField == self.origenField && self.destinoSelector.isHidden == true){
-            self.origenSelector.isHidden = false
-        }
-        else if (textField == self.origenField && self.destinoSelector.isHidden == false){
-            self.destinoSelector.isHidden = true
-            self.origenSelector.isHidden = false
-        }
-        else if (textField == self.destinoField && self.origenSelector.isHidden == true){
-            self.destinoSelector.isHidden = false
-        }
-        else if (textField == self.destinoField && self.origenSelector.isHidden == false){
-            self.origenSelector.isHidden = true
-            self.destinoSelector.isHidden = false
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // ponemos leyendas en los textInput origen y destino
         origenField.textAlignment = .center
-        origenField.placeholder = "Seleccione su origenl"
+        origenField.placeholder = "Seleccione su origen"
         destinoField.textAlignment = .center
         destinoField.placeholder = "Seleccione su destino"
+        
+        //Definimos un picker view para origenes, lo delegamos a el mismo y lo asignamos al TxtField origenes
+        let OrigenPickerView = UIPickerView()
+        OrigenPickerView.delegate = self
+        OrigenPickerView.tag = 1
+        origenField.inputView = OrigenPickerView
+        
+        //Definimos un picker view para origenes, lo delegamos a el mismo y lo asignamos al TxtField origenes
+        let DestinoPickerView = UIPickerView()
+        DestinoPickerView.delegate = self
+        DestinoPickerView.tag = 2
+        destinoField.inputView = DestinoPickerView
     }
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
+    {
+        if pickerView.tag == 1 {
+            return origenes.count
+        }
+        
+        if pickerView.tag == 2 {
+            return destinos.count
+        }
+        return 0
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView.tag == 1 {
+            return origenes[row]
+        }
+        if pickerView.tag == 2 {
+            return destinos[row]
+        }
+        return nil
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView.tag == 1 {
+            origenField.text = origenes[row]
+        }
+        if pickerView.tag == 2{
+            destinoField.text = destinos[row]
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
