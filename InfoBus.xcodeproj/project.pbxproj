@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB082C57209391E200E5CCCA /* popayan_logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = EB082C56209391E200E5CCCA /* popayan_logo2.png */; };
 		EBB49A832085223000840FFD /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB49A822085223000840FFD /* FavouriteViewController.swift */; };
 		EBD2AA15208173620013E932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2AA14208173620013E932 /* AppDelegate.swift */; };
 		EBD2AA17208173620013E932 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2AA16208173620013E932 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB082C56209391E200E5CCCA /* popayan_logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popayan_logo2.png; sourceTree = "<group>"; };
 		EBB49A822085223000840FFD /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		EBD2AA11208173620013E932 /* InfoBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD2AA14208173620013E932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD2AA26208174BA0013E932 /* popayan_logo.png */,
+				EB082C56209391E200E5CCCA /* popayan_logo2.png */,
 				EBD2AA14208173620013E932 /* AppDelegate.swift */,
 				EBD2AA16208173620013E932 /* ViewController.swift */,
 				EBD2AA18208173620013E932 /* Main.storyboard */,
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD2AA1F208173620013E932 /* LaunchScreen.storyboard in Resources */,
+				EB082C57209391E200E5CCCA /* popayan_logo2.png in Resources */,
 				EBD2AA1C208173620013E932 /* Assets.xcassets in Resources */,
 				EBD2AA1A208173620013E932 /* Main.storyboard in Resources */,
 				EBD2AA27208174BA0013E932 /* popayan_logo.png in Resources */,
