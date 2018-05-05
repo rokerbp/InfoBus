@@ -7,9 +7,10 @@
 //
 
 import UIKit
-var rutasManager:RutasManager = RutasManager()
-class RutaTableViewController: UITableViewController {
 
+class RutaTableViewController: UITableViewController {
+    var rutasManager:RutasManager = RutasManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,17 +51,14 @@ class RutaTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let selectedIndexPath = tableView.indexPathForSelectedRow,
-            let rutaViewController = segue.destination as? RutaViewController {
-            //Editing bookViewController.book =
-            rutasManager.getRuta(at: selectedIndexPath.row)
-            rutaViewController.delegate = self
-        } else if let navController = segue.destination
-            as? UINavigationController,
-            let rutaViewController = navController.topViewController
+            let rutaViewController = segue.destination
                 as? RutaViewController {
-                rutaViewController.delegate = self
-            }
+            //Editing
+            rutaViewController.ruta =
+                rutasManager.getRuta(at: selectedIndexPath.row)
+            rutaViewController.delegate = self as? RutaViewControllerDelegate
         }
+    }
     
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

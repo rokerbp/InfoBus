@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol RutaViewControllerDelegate {
+    func saveBook(_ ruta: Ruta)
+}
+
 class RutaViewController: UIViewController {
     var delegate: RutaViewControllerDelegate?
     
+    @IBOutlet weak var itinerario2TxtField: UILabel!
     @IBOutlet weak var rutaMap: UIImageView!
     @IBOutlet weak var empresaTxtField: UITextField!
     @IBOutlet weak var rutaTxtField: UITextField!
@@ -23,10 +28,10 @@ class RutaViewController: UIViewController {
         super.viewDidLoad()
         if let ruta = ruta {
             rutaMap.image = ruta.cover
-            empresaTxtField.text = ruta.empresa
-            rutaTxtField.text = ruta.ruta
-            tiempoTxtField.text = String(ruta.tiempo)
-            itinerarioTxtField.text = ruta.itinerario
+            empresaTxtField.text = ruta.empresa + " " + ruta.ruta
+            rutaTxtField.text = String(ruta.tiempo) + "Minutos"
+            tiempoTxtField.text = ruta.horario
+            itinerario2TxtField.text = ruta.itinerario
             navigationItem.title = "Ruta Seleccionada"
         }
         // Do any additional setup after loading the view.
@@ -36,6 +41,7 @@ class RutaViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     /*
     // MARK: - Navigation
@@ -47,7 +53,4 @@ class RutaViewController: UIViewController {
     }
     */
 
-}
-protocol RutaViewControllerDelegate {
-    func saveBook(_ ruta: Ruta)
 }

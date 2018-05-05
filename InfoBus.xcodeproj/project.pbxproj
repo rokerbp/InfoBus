@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		EB082C57209391E200E5CCCA /* popayan_logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = EB082C56209391E200E5CCCA /* popayan_logo2.png */; };
-		EBB49A832085223000840FFD /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB49A822085223000840FFD /* FavouriteViewController.swift */; };
 		EBB9E9942093F2BB0095A4B6 /* RutaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9E9932093F2BB0095A4B6 /* RutaTableViewController.swift */; };
 		EBB9E9962093F3240095A4B6 /* Ruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9E9952093F3240095A4B6 /* Ruta.swift */; };
 		EBB9E9982093F5F00095A4B6 /* RutasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9E9972093F5F00095A4B6 /* RutasManager.swift */; };
-		EBB9E99A2093FB100095A4B6 /* ruta.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB9E9992093FB100095A4B6 /* ruta.png */; };
 		EBB9E99C209405080095A4B6 /* RutaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9E99B209405080095A4B6 /* RutaViewController.swift */; };
+		EBCF0B23209789490048D46D /* ruta.png in Resources */ = {isa = PBXBuildFile; fileRef = EBCF0B22209789490048D46D /* ruta.png */; };
 		EBD2AA15208173620013E932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2AA14208173620013E932 /* AppDelegate.swift */; };
 		EBD2AA17208173620013E932 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2AA16208173620013E932 /* ViewController.swift */; };
 		EBD2AA1A208173620013E932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD2AA18208173620013E932 /* Main.storyboard */; };
@@ -24,12 +23,11 @@
 
 /* Begin PBXFileReference section */
 		EB082C56209391E200E5CCCA /* popayan_logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popayan_logo2.png; sourceTree = "<group>"; };
-		EBB49A822085223000840FFD /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		EBB9E9932093F2BB0095A4B6 /* RutaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutaTableViewController.swift; sourceTree = "<group>"; };
 		EBB9E9952093F3240095A4B6 /* Ruta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ruta.swift; sourceTree = "<group>"; };
 		EBB9E9972093F5F00095A4B6 /* RutasManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutasManager.swift; sourceTree = "<group>"; };
-		EBB9E9992093FB100095A4B6 /* ruta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ruta.png; path = ../../../Desktop/ruta.png; sourceTree = "<group>"; };
 		EBB9E99B209405080095A4B6 /* RutaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutaViewController.swift; sourceTree = "<group>"; };
+		EBCF0B22209789490048D46D /* ruta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruta.png; sourceTree = "<group>"; };
 		EBD2AA11208173620013E932 /* InfoBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD2AA14208173620013E932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD2AA16208173620013E932 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD2AA26208174BA0013E932 /* popayan_logo.png */,
-				EBB9E9992093FB100095A4B6 /* ruta.png */,
+				EBCF0B22209789490048D46D /* ruta.png */,
 				EB082C56209391E200E5CCCA /* popayan_logo2.png */,
 				EBD2AA14208173620013E932 /* AppDelegate.swift */,
 				EBD2AA16208173620013E932 /* ViewController.swift */,
@@ -80,7 +78,6 @@
 				EBB9E9972093F5F00095A4B6 /* RutasManager.swift */,
 				EBB9E9932093F2BB0095A4B6 /* RutaTableViewController.swift */,
 				EBB9E99B209405080095A4B6 /* RutaViewController.swift */,
-				EBB49A822085223000840FFD /* FavouriteViewController.swift */,
 				EBD2AA1B208173620013E932 /* Assets.xcassets */,
 				EBD2AA1D208173620013E932 /* LaunchScreen.storyboard */,
 				EBD2AA20208173620013E932 /* Info.plist */,
@@ -152,7 +149,7 @@
 				EBD2AA1C208173620013E932 /* Assets.xcassets in Resources */,
 				EBD2AA1A208173620013E932 /* Main.storyboard in Resources */,
 				EBD2AA27208174BA0013E932 /* popayan_logo.png in Resources */,
-				EBB9E99A2093FB100095A4B6 /* ruta.png in Resources */,
+				EBCF0B23209789490048D46D /* ruta.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +163,6 @@
 				EBB9E9962093F3240095A4B6 /* Ruta.swift in Sources */,
 				EBD2AA17208173620013E932 /* ViewController.swift in Sources */,
 				EBB9E99C209405080095A4B6 /* RutaViewController.swift in Sources */,
-				EBB49A832085223000840FFD /* FavouriteViewController.swift in Sources */,
 				EBD2AA15208173620013E932 /* AppDelegate.swift in Sources */,
 				EBB9E9942093F2BB0095A4B6 /* RutaTableViewController.swift in Sources */,
 				EBB9E9982093F5F00095A4B6 /* RutasManager.swift in Sources */,
