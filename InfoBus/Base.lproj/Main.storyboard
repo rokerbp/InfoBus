@@ -81,6 +81,13 @@
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="☆" id="kgs-XJ-0xF"/>
+                            <barButtonItem title="QR" image="barcode" id="Kag-0h-iS4">
+                                <connections>
+                                    <segue destination="YNf-EG-nNQ" kind="popoverPresentation" popoverAnchorBarButtonItem="Kag-0h-iS4" id="bwo-ej-8ds">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -91,6 +98,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="513.75" y="117.25352112676056"/>
+        </scene>
+        <!--Detect Barcode-->
+        <scene sceneID="VrH-Li-ycg">
+            <objects>
+                <viewController title="Detect Barcode" id="5hd-L6-pE9" customClass="BarcodeViewController" customModule="InfoBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z8i-J4-g5h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Y03-hR-BXd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AzH-TF-TDA">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="dvN-u6-cGX">
+                            <connections>
+                                <action selector="touchCancel:" destination="5hd-L6-pE9" id="7Gq-MP-6Xy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OX4-9y-UdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="514" y="1715"/>
         </scene>
         <!--Rutas Disponibles-->
         <scene sceneID="7x7-PX-R4k">
@@ -282,8 +311,27 @@
             </objects>
             <point key="canvasLocation" x="2042" y="-660"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lbc-ap-oHx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YNf-EG-nNQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NDX-ch-3Kc">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5hd-L6-pE9" kind="relationship" relationship="rootViewController" id="hSU-9o-OXe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NH9-wj-bwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="945"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="barcode" width="22" height="22"/>
         <image name="popayan_logo2.png" width="195" height="78"/>
     </resources>
     <inferredMetricsTieBreakers>

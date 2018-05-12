@@ -83,6 +83,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navigationController = segue.destination as?
+            UINavigationController,
+            let barcodeViewController =
+            navigationController.topViewController as? BarcodeViewController {
+            barcodeViewController.delegate = self
+        } }
+    
     
 }
-
+extension ViewController:BarcodeViewControllerDelegate {
+    func foundBarcode(barcode: String) {
+        origenField.text = barcode
+    }
+}
