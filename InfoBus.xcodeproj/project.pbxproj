@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		EB042B4120A34CF600A1CD5D /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB042B4020A34CF600A1CD5D /* BarcodeViewController.swift */; };
-		EB06626E20B0C23200EC5762 /* Rutas.db in Resources */ = {isa = PBXBuildFile; fileRef = EB06626D20B0C23200EC5762 /* Rutas.db */; };
+		EB06627120B0C70A00EC5762 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB06627020B0C70A00EC5762 /* libsqlite3.tbd */; };
+		EB06629620B0C94D00EC5762 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EB06628B20B0C94C00EC5762 /* FMDatabase.m */; };
+		EB06629720B0C94D00EC5762 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EB06628E20B0C94D00EC5762 /* FMDatabaseAdditions.m */; };
+		EB06629820B0C94D00EC5762 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB06628F20B0C94D00EC5762 /* Info.plist */; };
+		EB06629920B0C94D00EC5762 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EB06629020B0C94D00EC5762 /* FMDatabaseQueue.m */; };
+		EB06629A20B0C94D00EC5762 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EB06629420B0C94D00EC5762 /* FMResultSet.m */; };
+		EB06629B20B0C94D00EC5762 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EB06629520B0C94D00EC5762 /* FMDatabasePool.m */; };
 		EB082C57209391E200E5CCCA /* popayan_logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = EB082C56209391E200E5CCCA /* popayan_logo2.png */; };
 		EBB9E9942093F2BB0095A4B6 /* RutaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9E9932093F2BB0095A4B6 /* RutaTableViewController.swift */; };
 		EBB9E9962093F3240095A4B6 /* Ruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9E9952093F3240095A4B6 /* Ruta.swift */; };
 		EBB9E9982093F5F00095A4B6 /* RutasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9E9972093F5F00095A4B6 /* RutasManager.swift */; };
 		EBB9E99C209405080095A4B6 /* RutaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9E99B209405080095A4B6 /* RutaViewController.swift */; };
 		EBCF0B23209789490048D46D /* ruta.png in Resources */ = {isa = PBXBuildFile; fileRef = EBCF0B22209789490048D46D /* ruta.png */; };
+		EBD1EE0120B5F8BD0062E3B9 /* Favoritos.db in Resources */ = {isa = PBXBuildFile; fileRef = EB11764920B50DC50013FE11 /* Favoritos.db */; };
+		EBD1EE0320B5FE3C0062E3B9 /* FavoritosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1EE0220B5FE3C0062E3B9 /* FavoritosTableViewController.swift */; };
 		EBD2AA15208173620013E932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2AA14208173620013E932 /* AppDelegate.swift */; };
 		EBD2AA17208173620013E932 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2AA16208173620013E932 /* ViewController.swift */; };
 		EBD2AA1A208173620013E932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD2AA18208173620013E932 /* Main.storyboard */; };
@@ -26,12 +34,28 @@
 /* Begin PBXFileReference section */
 		EB042B4020A34CF600A1CD5D /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 		EB06626D20B0C23200EC5762 /* Rutas.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rutas.db; sourceTree = "<group>"; };
+		EB06627020B0C70A00EC5762 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EB06628920B0C94B00EC5762 /* InfoBus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InfoBus-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB06628A20B0C94C00EC5762 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		EB06628B20B0C94C00EC5762 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		EB06628C20B0C94C00EC5762 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		EB06628D20B0C94C00EC5762 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		EB06628E20B0C94D00EC5762 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		EB06628F20B0C94D00EC5762 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB06629020B0C94D00EC5762 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		EB06629120B0C94D00EC5762 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		EB06629220B0C94D00EC5762 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		EB06629320B0C94D00EC5762 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		EB06629420B0C94D00EC5762 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		EB06629520B0C94D00EC5762 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		EB082C56209391E200E5CCCA /* popayan_logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popayan_logo2.png; sourceTree = "<group>"; };
+		EB11764920B50DC50013FE11 /* Favoritos.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Favoritos.db; sourceTree = "<group>"; };
 		EBB9E9932093F2BB0095A4B6 /* RutaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutaTableViewController.swift; sourceTree = "<group>"; };
 		EBB9E9952093F3240095A4B6 /* Ruta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ruta.swift; sourceTree = "<group>"; };
 		EBB9E9972093F5F00095A4B6 /* RutasManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutasManager.swift; sourceTree = "<group>"; };
 		EBB9E99B209405080095A4B6 /* RutaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutaViewController.swift; sourceTree = "<group>"; };
 		EBCF0B22209789490048D46D /* ruta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruta.png; sourceTree = "<group>"; };
+		EBD1EE0220B5FE3C0062E3B9 /* FavoritosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosTableViewController.swift; sourceTree = "<group>"; };
 		EBD2AA11208173620013E932 /* InfoBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD2AA14208173620013E932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD2AA16208173620013E932 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,17 +71,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB06627120B0C70A00EC5762 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB06626F20B0C70900EC5762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB06627020B0C70A00EC5762 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB06627220B0C76E00EC5762 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				EB06629120B0C94D00EC5762 /* FMDatabase.h */,
+				EB06628B20B0C94C00EC5762 /* FMDatabase.m */,
+				EB06628A20B0C94C00EC5762 /* FMDatabaseAdditions.h */,
+				EB06628E20B0C94D00EC5762 /* FMDatabaseAdditions.m */,
+				EB06629320B0C94D00EC5762 /* FMDatabasePool.h */,
+				EB06629520B0C94D00EC5762 /* FMDatabasePool.m */,
+				EB06628D20B0C94C00EC5762 /* FMDatabaseQueue.h */,
+				EB06629020B0C94D00EC5762 /* FMDatabaseQueue.m */,
+				EB06628C20B0C94C00EC5762 /* FMDB.h */,
+				EB06629220B0C94D00EC5762 /* FMResultSet.h */,
+				EB06629420B0C94D00EC5762 /* FMResultSet.m */,
+				EB06628F20B0C94D00EC5762 /* Info.plist */,
+				EB06628920B0C94B00EC5762 /* InfoBus-Bridging-Header.h */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		EBD2AA08208173620013E932 = {
 			isa = PBXGroup;
 			children = (
 				EBD2AA13208173620013E932 /* InfoBus */,
 				EBD2AA12208173620013E932 /* Products */,
+				EB06626F20B0C70900EC5762 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,13 +126,16 @@
 		EBD2AA13208173620013E932 /* InfoBus */ = {
 			isa = PBXGroup;
 			children = (
+				EB06627220B0C76E00EC5762 /* fmdb */,
 				EBD2AA26208174BA0013E932 /* popayan_logo.png */,
 				EB06626D20B0C23200EC5762 /* Rutas.db */,
+				EB11764920B50DC50013FE11 /* Favoritos.db */,
 				EBCF0B22209789490048D46D /* ruta.png */,
 				EB082C56209391E200E5CCCA /* popayan_logo2.png */,
 				EBD2AA14208173620013E932 /* AppDelegate.swift */,
 				EBD2AA16208173620013E932 /* ViewController.swift */,
 				EBD2AA18208173620013E932 /* Main.storyboard */,
+				EBD1EE0220B5FE3C0062E3B9 /* FavoritosTableViewController.swift */,
 				EB042B4020A34CF600A1CD5D /* BarcodeViewController.swift */,
 				EBB9E9952093F3240095A4B6 /* Ruta.swift */,
 				EBB9E9972093F5F00095A4B6 /* RutasManager.swift */,
@@ -123,6 +180,7 @@
 				TargetAttributes = {
 					EBD2AA10208173620013E932 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,10 +208,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD1EE0120B5F8BD0062E3B9 /* Favoritos.db in Resources */,
+				EB06629820B0C94D00EC5762 /* Info.plist in Resources */,
 				EBD2AA1F208173620013E932 /* LaunchScreen.storyboard in Resources */,
 				EB082C57209391E200E5CCCA /* popayan_logo2.png in Resources */,
 				EBD2AA1C208173620013E932 /* Assets.xcassets in Resources */,
-				EB06626E20B0C23200EC5762 /* Rutas.db in Resources */,
 				EBD2AA1A208173620013E932 /* Main.storyboard in Resources */,
 				EBD2AA27208174BA0013E932 /* popayan_logo.png in Resources */,
 				EBCF0B23209789490048D46D /* ruta.png in Resources */,
@@ -168,12 +227,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB9E9962093F3240095A4B6 /* Ruta.swift in Sources */,
+				EB06629B20B0C94D00EC5762 /* FMDatabasePool.m in Sources */,
 				EBD2AA17208173620013E932 /* ViewController.swift in Sources */,
 				EBB9E99C209405080095A4B6 /* RutaViewController.swift in Sources */,
 				EBD2AA15208173620013E932 /* AppDelegate.swift in Sources */,
 				EBB9E9942093F2BB0095A4B6 /* RutaTableViewController.swift in Sources */,
+				EB06629920B0C94D00EC5762 /* FMDatabaseQueue.m in Sources */,
+				EB06629720B0C94D00EC5762 /* FMDatabaseAdditions.m in Sources */,
 				EBB9E9982093F5F00095A4B6 /* RutasManager.swift in Sources */,
+				EB06629A20B0C94D00EC5762 /* FMResultSet.m in Sources */,
 				EB042B4120A34CF600A1CD5D /* BarcodeViewController.swift in Sources */,
+				EBD1EE0320B5FE3C0062E3B9 /* FavoritosTableViewController.swift in Sources */,
+				EB06629620B0C94D00EC5762 /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YFS3845SR9;
 				INFOPLIST_FILE = InfoBus/Info.plist;
@@ -317,6 +383,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = roker.ios.2018.InfoBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InfoBus/fmdb/InfoBus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YFS3845SR9;
 				INFOPLIST_FILE = InfoBus/Info.plist;
@@ -333,6 +402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = roker.ios.2018.InfoBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InfoBus/fmdb/InfoBus-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
