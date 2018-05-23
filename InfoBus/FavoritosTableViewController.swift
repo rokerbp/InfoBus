@@ -10,7 +10,7 @@ import UIKit
 
 class FavoritosTableViewController: UITableViewController {
     
-    var rutasManager:RutasManager = RutasManager()
+    var rutasManager:FavoritosManager = FavoritosManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()

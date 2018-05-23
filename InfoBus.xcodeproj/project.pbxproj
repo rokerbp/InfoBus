@@ -23,6 +23,7 @@
 		EBCF0B23209789490048D46D /* ruta.png in Resources */ = {isa = PBXBuildFile; fileRef = EBCF0B22209789490048D46D /* ruta.png */; };
 		EBD1EE0120B5F8BD0062E3B9 /* Favoritos.db in Resources */ = {isa = PBXBuildFile; fileRef = EB11764920B50DC50013FE11 /* Favoritos.db */; };
 		EBD1EE0320B5FE3C0062E3B9 /* FavoritosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1EE0220B5FE3C0062E3B9 /* FavoritosTableViewController.swift */; };
+		EBD1EE0520B606D80062E3B9 /* FavoritosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1EE0420B606D80062E3B9 /* FavoritosManager.swift */; };
 		EBD2AA15208173620013E932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2AA14208173620013E932 /* AppDelegate.swift */; };
 		EBD2AA17208173620013E932 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2AA16208173620013E932 /* ViewController.swift */; };
 		EBD2AA1A208173620013E932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD2AA18208173620013E932 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		EBB9E99B209405080095A4B6 /* RutaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutaViewController.swift; sourceTree = "<group>"; };
 		EBCF0B22209789490048D46D /* ruta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruta.png; sourceTree = "<group>"; };
 		EBD1EE0220B5FE3C0062E3B9 /* FavoritosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosTableViewController.swift; sourceTree = "<group>"; };
+		EBD1EE0420B606D80062E3B9 /* FavoritosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosManager.swift; sourceTree = "<group>"; };
 		EBD2AA11208173620013E932 /* InfoBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD2AA14208173620013E932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD2AA16208173620013E932 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				EBD2AA16208173620013E932 /* ViewController.swift */,
 				EBD2AA18208173620013E932 /* Main.storyboard */,
 				EBD1EE0220B5FE3C0062E3B9 /* FavoritosTableViewController.swift */,
+				EBD1EE0420B606D80062E3B9 /* FavoritosManager.swift */,
 				EB042B4020A34CF600A1CD5D /* BarcodeViewController.swift */,
 				EBB9E9952093F3240095A4B6 /* Ruta.swift */,
 				EBB9E9972093F5F00095A4B6 /* RutasManager.swift */,
@@ -237,6 +240,7 @@
 				EBB9E9982093F5F00095A4B6 /* RutasManager.swift in Sources */,
 				EB06629A20B0C94D00EC5762 /* FMResultSet.m in Sources */,
 				EB042B4120A34CF600A1CD5D /* BarcodeViewController.swift in Sources */,
+				EBD1EE0520B606D80062E3B9 /* FavoritosManager.swift in Sources */,
 				EBD1EE0320B5FE3C0062E3B9 /* FavoritosTableViewController.swift in Sources */,
 				EB06629620B0C94D00EC5762 /* FMDatabase.m in Sources */,
 			);
